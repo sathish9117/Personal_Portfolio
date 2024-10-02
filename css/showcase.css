@@ -1,11 +1,9 @@
 .showcase {
-  border: 1px solid;
   padding: 80px 60px 100px;
   background: #e5e7eb;
 }
 
 .showcase__header {
-  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,10 +22,6 @@
   border-color: #1f2937;
 }
 
-.showcase_categories {
-  border: 1px solid red;
-}
-
 .showcase_categories .category:first-child {
   margin-bottom: 100px;
 }
@@ -39,7 +33,6 @@
 
 .category__header .category__title,
 .category__desc {
-  border: 1px solid red;
   width: 50%;
   display: flex;
   align-items: center;
