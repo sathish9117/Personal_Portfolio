@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/skills.css">
     <title>Persona Portfolio | SMartTech</title>
     <!-- Base Style -->
     <style>
@@ -56,83 +57,153 @@
             color: #fff;
         }
     </style>
-    <!-- skills -->
+    <!-- showcase -->
     <style>
-        .skills {
-            /* border: 1px solid; */
-            padding: 60px;
+        .showcase {
+            border: 1px solid;
+            padding: 80px 60px 100px;
+            background: #e5e7eb;
+        }
+
+        .showcase__header {
+            border: 1px solid;
             display: flex;
             align-items: center;
-            gap: 40px;
+            justify-content: space-between;
         }
 
-        .skills_description,
-        .skills__status {
-            width: 50%;
-        }
-
-        .skills_description {
-
-            padding-right: 80px;
-        }
-
-        .skills_description h3 {
-
-            font-size: 30px;
+        .showcase__header h3 {
+            font-size: 28px;
             font-weight: 400;
-            margin-bottom: 10px;
         }
 
-        .skills_description p {
-            font-size: 14px;
-            margin-bottom: 30px;
+        .showcase__header .btn {
+            font-size: 13px;
+            padding: 5px 16px;
+            color: #fff;
+            background: #1f2937;
+            border-color: #1f2937;
         }
 
-        .skills__actions {
+        .showcase_categories {
+            border: 1px solid red;
+        }
+
+        .showcase_categories .category:first-child {
+            margin-bottom: 100px;
+        }
+
+        .category__header {
             display: flex;
-            gap: 10px;
+            align-items: center;
+
         }
 
-        .skills__actions .btn {
-            padding: 6px 20px;
-            font-size: 12px;
+        .category__header .category__title,
+        .category__desc {
+            border: 1px solid red;
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .category__title {
+            gap: 12px;
+        }
+
+        .category__title h4 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .category__title i {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .category__desc {
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .category__desc p {
+            color: #6b7280;
             font-weight: 500;
         }
 
-        .skills__stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+        .category__desc a {
+            font-size: 22px;
         }
 
-        .skills__stats i {
-            font-size: 60px;
+        .category__projects {
+            margin-top: 40px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 0;
+            gap: 20px;
         }
 
-        .skills__info {
-            background: #e5e7eb;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        .project-card {
+            position: relative;
+            width: 25%;
+            height: 420px;
             padding: 20px;
+
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .skills__info h5 {
-            text-align: center;
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 10px;
+        .project-card__image {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-position: top center;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 20px;
         }
 
-        .skills__info p {
-            width: 50%;
-            text-align: center;
-            font-size: 14px;
+        .project-card__info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .project-card__info h5 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .project-card__info p {
+            font-size: 12px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .project-card__desc {
+            font-size: 13px;
             color: #7a7a7a;
+            margin-bottom: 30px;
+        }
+
+        .project-card .btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 8px 20px;
+            border-radius: 16px 0 10px 0;
+            border: none;
+            color: #fff;
+            background: #1f2937;
+        }
+
+        .project-card .btn:hover {
+            background: #000;
         }
     </style>
 
@@ -178,7 +249,6 @@
         </div>
     </section>
     <!-- Skills -->
-    <!-- Skills -->
     <section class="skills">
         <div class="skills_description">
             <h3>Experienced Across Multiple Projects and Technologies</h3>
@@ -215,6 +285,152 @@
             <i class="ri-html5-line"></i>
 
         </div>
+    </section>
+    <!-- showcase -->
+    <section class="showcase">
+
+        <div class="showcase__header">
+            <h3>I Can help You With:</h3>
+            <button class="btn">See My Work</button>
+        </div>
+        <div class="showcase_categories">
+            <section class="category">
+                <div class="category__header">
+
+                    <div class="category__title">
+                        <i class="ri-macbook-line"></i>
+                        <h4>Portfolio Webasites</h4>
+                    </div>
+                    <div class="category__desc">
+                        <p>Designing and developing eye-catching. fully responsive portfolio Webasites that highlight
+                            your skills and projects, ensuring a proferssiona; online presence.</p>
+                        <a href="#"><i class="ri-share-circle-line"></i></a>
+                    </div>
+
+                </div>
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="/images/hero-img.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-group-2-line"></i>
+                        <h4>Websites Development</h4>
+                    </div>
+                    <div class="category__desc">
+                        <p>End-to-end Development of responsive Websites that look great on all devices,with a focus on
+                            performance and aestheics.</p>
+                        <a href="#"><i class="ri-share-circle-line"></i></a>
+
+                    </div>
+                </div>
+
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/peakpx.jpg" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio-1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati quam sequi
+                            aperiam nesciunt ipsam cumque enim vero totam dolore!
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
     </section>
 </body>
 
