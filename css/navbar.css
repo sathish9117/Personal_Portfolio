@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.navbar__logo {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.navbar__logo i {
+  font-size: 30px;
+}
+
+.navbar__menu {
+  /* border: 1px solid; */
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__link {
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.navbar__link:hover {
+  color: #000;
+}
+
+.navbar__actions {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar__locations h5 {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.navbar__locations p {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.btn-quote {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
