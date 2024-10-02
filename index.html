@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
     <title>Persona Portfolio | SMartTech</title>
     <!-- Base Style -->
     <style>
@@ -55,87 +56,83 @@
             color: #fff;
         }
     </style>
-    <!-- hero -->
+    <!-- skills -->
     <style>
-        .hero {
-            border: 1px solid;
-            position: relative;
+        .skills {
+            /* border: 1px solid; */
+            padding: 60px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 100px 60px;
-            gap: 60px;
-            height: calc(100vh - 75px);
-
+            gap: 40px;
         }
 
-        .hero__content,
-        .hero__intro {
+        .skills_description,
+        .skills__status {
             width: 50%;
         }
 
-        .hero__image {
-            width: 340px;
-            height: 340px;
-            border-radius: 10px;
+        .skills_description {
+
+            padding-right: 80px;
         }
 
-        .hero__content h2 {
-            font-size: 48px;
-            line-height: 60px;
+        .skills_description h3 {
+
+            font-size: 30px;
             font-weight: 400;
-            margin-top: 20px;
-            width: 85%;
-        }
-
-        .hero__intro {
-            padding-right: 40px;
-        }
-
-        .hero__intro h3 {
-            font-weight: 500;
-            font-size: 40px;
-            line-height: 50px;
             margin-bottom: 10px;
         }
 
-        .hero__intro p {
-            color: #6b7280;
-            font-weight: 500;
+        .skills_description p {
+            font-size: 14px;
             margin-bottom: 30px;
         }
 
-        .hero__actions {
+        .skills__actions {
             display: flex;
             gap: 10px;
-
         }
 
-        .hero__actions .btn {
+        .skills__actions .btn {
             padding: 6px 20px;
             font-size: 12px;
             font-weight: 500;
         }
 
-        .hero__socials {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            right: 30px;
-            top: 20%;
-
+        .skills__stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
 
-        .hero__socials a {
+        .skills__stats i {
+            font-size: 60px;
             display: flex;
-            /* justify-content: center; */
-            /* align-items: center; */
-            font-size: 20px;
-            border: 2px solid #e5e7eb;
-            padding: 8px;
-            border-radius: 50%;
-            transition: all 0.5s ease;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .skills__info {
+            background: #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .skills__info h5 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .skills__info p {
+            width: 50%;
+            text-align: center;
+            font-size: 14px;
+            color: #7a7a7a;
         }
     </style>
 
@@ -180,7 +177,45 @@
             <a href="#"><i class="ri-youtube-fill"></i></a>
         </div>
     </section>
+    <!-- Skills -->
+    <!-- Skills -->
+    <section class="skills">
+        <div class="skills_description">
+            <h3>Experienced Across Multiple Projects and Technologies</h3>
+            <p>Bringing creativity and technical proficiency to building responsive web applications and enhancing user
+                experiences.</p>
+            <div class="skills__actions">
+                <button class="btn">Work with me</button>
+                <button class="btn btn--secondary">Send Email</button>
+            </div>
+        </div>
+        <div class="skills__stats">
+            <i class="ri-codepen-line"></i>
+            <div class="skills__info">
+                <h5>40+</h5>
+                <p>JavaScript Projects</p>
+            </div>
 
+            <i class="ri-reactjs-line"></i>
+            <!--  -->
+            <div class="skills__info">
+                <h5>12+</h5>
+                <p>Remote Projects</p>
+            </div>
+            <div class="skills__info">
+                <h5>50+</h5>
+                <p>Codepen Projects</p>
+            </div>
+
+            <i class="ri-rocket-line"></i>
+            <div class="skills__info">
+                <h5>20+</h5>
+                <p>React Projects</p>
+            </div>
+            <i class="ri-html5-line"></i>
+
+        </div>
+    </section>
 </body>
 
 </html>
