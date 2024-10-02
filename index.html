@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <title>Persona Portfolio | SMartTech</title>
+    <!-- Base Style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #1f2937;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        .btn {
+            border: 2px solid #1f2937;
+            background: #1f2937;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        .btn:hover {
+            color: #1f2937;
+            background: #fff;
+            border-color: #e5e7eb;
+        }
+
+        .btn--secondary {
+            color: #1f2937;
+            background: #fff;
+            border: 2px solid #e5e7eb;
+        }
+
+        .btn--secondary:hover {
+            border-color: #1f2937;
+            background: #1f2937;
+            color: #fff;
+        }
+    </style>
+    <!-- navbar -->
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 60px;
+
+        }
+
+        .navbar__logo {
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            gap: 10px;
+        }
+
+        .navbar__logo i {
+            font-size: 30px;
+
+        }
+
+        .navbar__menu {
+            border: 1px solid;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar__link {
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.5s ease;
+        }
+
+        .navbar__link:hover {
+            color: #000;
+        }
+
+        .navbar__actions {
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar__locations h5 {
+            font-weight: 500;
+            color: #6b7280;
+            font-size: 12px;
+        }
+
+        .navbar__locations p {
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .btn-quote {
+            padding: 6px 10px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .btn-quote:hover {}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i> SMartTech Academy</a>
+        <div class="navbar__menu">
+            <a href="#" class="navbar__link">Home</a>
+            <a href="#" class="navbar__link">Projects</a>
+            <a href="#" class="navbar__link">Skills</a>
+            <a href="#" class="navbar__link">About</a>
+        </div>
+        <div class="navbar__actions">
+            <div class="navbar__locations">
+                <h5>USA, New York</h5>
+                <p>6:18:31 pm</p>
+            </div>
+            <button class="btn btn-quote">Get a Quote</button>
+
+        </div>
+    </nav>
+</body>
+
+</html>
