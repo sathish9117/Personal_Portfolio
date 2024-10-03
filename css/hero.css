@@ -60,6 +60,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+
   gap: 16px;
   right: 30px;
   top: 20%;
@@ -67,8 +68,8 @@
 
 .hero__socials a {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   border: 2px solid #e5e7eb;
   padding: 8px;
