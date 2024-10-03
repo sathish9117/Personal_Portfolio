@@ -1,0 +1,20 @@
+@media screen and (max-width: 1230px) {
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .navbar__actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

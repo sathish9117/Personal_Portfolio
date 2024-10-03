@@ -1,0 +1,13 @@
+@media screen and (max-width: 1230px) {
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+}

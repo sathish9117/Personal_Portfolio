@@ -1,0 +1,9 @@
+@media screen and (max-width: 1230px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .career h3 {
+    font-size: 26px;
+  }
+}
