@@ -16,5 +16,6 @@
   .navbar__actions {
     width: 100%;
     justify-content: space-between;
+    padding: 15px;
   }
 }
